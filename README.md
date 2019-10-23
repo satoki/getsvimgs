@@ -11,24 +11,23 @@ Population density, land prices, urbanity, etc.
 
 ## Demo
 
-35.170915,136.8815369 ±5km
+35.170915,136.8815369 ±5km  
 <img src="https://github.com/satoki/getsvimgs/blob/images/N_i.png" width=70%>  
 
-35.17197185210667,136.88454288022737  
-400x400  
-North
-<img src="https://github.com/satoki/getsvimgs/blob/images/N_35.17197185210667%2C136.88454288022737.jpg" width=60%>  
-South
-<img src="https://github.com/satoki/getsvimgs/blob/images/S_35.17197185210667%2C136.88454288022737.jpg" width=60%>  
-East
-<img src="https://github.com/satoki/getsvimgs/blob/images/E_35.17197185210667%2C136.88454288022737.jpg" width=60%>  
-West
-<img src="https://github.com/satoki/getsvimgs/blob/images/W_35.17197185210667%2C136.88454288022737.jpg" width=60%>  
+35.17197185210667,136.88454288022737 (400x400)  
+North  
+<img src="https://github.com/satoki/getsvimgs/blob/images/N_35.17197185210667%2C136.88454288022737.jpg" width=30%>  
+South  
+<img src="https://github.com/satoki/getsvimgs/blob/images/S_35.17197185210667%2C136.88454288022737.jpg" width=30%>  
+East  
+<img src="https://github.com/satoki/getsvimgs/blob/images/E_35.17197185210667%2C136.88454288022737.jpg" width=30%>  
+West  
+<img src="https://github.com/satoki/getsvimgs/blob/images/W_35.17197185210667%2C136.88454288022737.jpg" width=30%>  
 
 ## Usage
 
-Set a variable starting with "_" and APIKEY in the main function.  
-main関数内の"_"から始まる変数とAPIKEYを設定してください。  
+Set a variable starting with "\_" and APIKEY in the main function.  
+main関数内の"\_"から始まる変数とAPIKEYを設定してください。  
 
 ```console
 $ pip3 install tqdm

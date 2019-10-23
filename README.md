@@ -1,10 +1,10 @@
 # GetSvImgs
 
-Automatically collect images around the specified latitude and longitude.  
+Automatically collect images around the specified latitude and longitude from Google Street View.  
 Various parameters such as size can be set for the image.  
 Intended for use in machine learning.  
 Population density, land prices, urbanity, etc.  
-指定された緯度と経度の周りの画像を自動的に収集します。  
+指定された緯度と経度の周りの画像をGoogle Street Viewから自動的に収集します。  
 画像はサイズをはじめとしたさまざまなパラメータが設定可能です。  
 機械学習での使用を想定しています。  
 人口密度、地価、都会度など  

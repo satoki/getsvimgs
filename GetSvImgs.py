@@ -71,8 +71,8 @@ def main():
                     break
         progressbar.close()
         print("["+_prefecture+","+str(_n_o_images)+"]:OK")
-    except Exception as err:
-        print(err.message)
+    except Exception as error:
+        print(error.message)
 
 if __name__ == '__main__':
     main()

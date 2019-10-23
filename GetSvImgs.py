@@ -22,6 +22,8 @@ def image_exists(url):
     #print(status)
     if status == "OK":
         return True
+    elif status == "REQUEST_DENIED":
+        raise Exception("Check API_KEY:REQUEST_DENIED")
     else:
         return False
 
@@ -72,7 +74,7 @@ def main():
         progressbar.close()
         print("["+_prefecture+","+str(_n_o_images)+"]:OK")
     except Exception as error:
-        print(error.message)
+        print(error)
 
 if __name__ == '__main__':
     main()

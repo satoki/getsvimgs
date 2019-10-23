@@ -5,7 +5,7 @@ Various parameters such as size can be set for the image.
 Intended for use in machine learning.  
 Population density, land prices, urbanity, etc.  
 指定された緯度と経度の周りの画像をGoogle Street Viewから自動的に収集します。  
-画像はサイズをはじめとしたさまざまなパラメータが設定可能です。  
+サイズをはじめとしたさまざまなパラメータが設定可能です。  
 機械学習での使用を想定しています。  
 人口密度、地価、都会度など  
 
@@ -26,8 +26,8 @@ West
 
 ## Usage
 
-Set a variable starting with "\_" and APIKEY in the main function.  
-main関数内の"\_"から始まる変数とAPIKEYを設定してください。  
+Set all variables starting with "\_" such as _api_key in the main function.  
+main関数内の_api_keyなど"\_"から始まる変数を設定してください。  
 
 ```console
 $ pip3 install tqdm

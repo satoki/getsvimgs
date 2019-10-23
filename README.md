@@ -26,8 +26,8 @@ West
 
 ## Usage
 
-Set all variables starting with "\_" such as "_api_key" in the main function.  
-main関数内の"_api_key"など"\_"から始まる変数を設定してください。  
+Set all variables starting with "\_" such as "\_api\_key" in the main function.  
+main関数内の"\_api\_key"など"\_"から始まる変数を設定してください。  
 
 ```console
 $ pip3 install tqdm

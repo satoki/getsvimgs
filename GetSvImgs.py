@@ -68,12 +68,13 @@ def main():
                 if image_exists(i_url):
                     number += 1
                     progressbar.update(1)
-                    get_image(_prefecture, "{}_{}_".format(number, heading, location), i_url)
+                    get_image(_prefecture, "{}_{}_{}".format(number, heading, location), i_url)
                 else:
                     break
         progressbar.close()
         print("[{},{}]:OK".format(_prefecture, number))
     except Exception as error:
+        progressbar.close()
         print(error)
 
 if __name__ == '__main__':

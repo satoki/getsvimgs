@@ -23,23 +23,23 @@ def image_exists(url):
     if status == "OK":
         return True
     elif status == "REQUEST_DENIED":
-        raise Exception("Check API_KEY:REQUEST_DENIED")
+        message = "Check API_KEY"
+        raise Exception("[{}]:{}".format(message, status))
     else:
         return False
 
 def get_image(direname, filename, url):
     g_url = requests.get(url)
     os.makedirs(direname, exist_ok=True)
-    with open(direname+"/"+filename+".jpg", mode="wb") as t_file:
+    with open("{}/{}.jpg".format(direname, filename), mode="wb") as t_file:
         t_file.write(g_url.content)
 
 def set_location(latitude, longitude, range):
     latitude_1km = 0.0090133729745762
     longitude_1km = 0.010966404715491394
-    #return str(latitude)+","+str(longitude)
-    return str(latitude+(random.uniform(0, range*2)-range)*latitude_1km)\
-           +","\
-           +str(longitude+(random.uniform(0, range*2)-range)*longitude_1km)
+    latitude = latitude+(random.uniform(0, range*2)-range)*latitude_1km
+    longitude = longitude+(random.uniform(0, range*2)-range)*longitude_1km
+    return "{},{}".format(latitude, longitude)
 
 def main():
     _api_key = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ##API_KEY
@@ -68,11 +68,11 @@ def main():
                 if image_exists(i_url):
                     number += 1
                     progressbar.update(1)
-                    get_image(_prefecture, str(number)+"_"+str(heading)+"_"+location, i_url)
+                    get_image(_prefecture, "{}_{}_".format(number, heading, location), i_url)
                 else:
                     break
         progressbar.close()
-        print("["+_prefecture+","+str(_n_o_images)+"]:OK")
+        print("[{},{}]:OK".format(_prefecture, number))
     except Exception as error:
         print(error)
 
